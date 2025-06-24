@@ -13,7 +13,7 @@
  }
 
  a {
-     text-decoration: none;
+    text-decoration: none !important;
      color: inherit;
  }
 
@@ -46,8 +46,9 @@
      margin: 0 5px;
  }
 
- body {
-     background-color: #D9D9D9;
+
+ .container-all {
+     background-color: #f6f7fb;
  }
 
  /* Header chính */
@@ -246,7 +247,7 @@
  .recent-activity .recent-activity-title {
      text-transform: uppercase;
      width: 90%;
-     margin: 5px auto;
+    
      border-radius: 12px;
      background-color: #D9D9D9;
      text-align: center;
@@ -254,6 +255,7 @@
      position: sticky;
      top: 0;
      z-index: 100;
+     width: 260px;
  }
 
 
@@ -316,12 +318,6 @@
      color: #666;
  }
 
-
- .new-title {
-     font-size: 1.4rem;
-     margin-bottom: 15px;
-     text-align: center;
- }
 
  @media (max-width: 768px) {
      .features {
@@ -515,7 +511,7 @@
 
  .recent-activity {
      width: 300px;
-     
+
  }
 
  /* Tính năng responsive */
@@ -549,9 +545,7 @@
      }
 
      .search-bar,
-     .actions {
-         width: 100%;
-     }
+
 
      .nav-main li {
          width: 50%;
@@ -569,12 +563,14 @@
      }
  }
 
- .new-title {
-     font-size: 32px;
-     background-color: white;
-     padding: 15px;
-     font-weight: 600;
+ .title-product {
+     border-bottom: #000 solid 0.5px;
      margin-bottom: 50px;
+ }
+
+ .new-title {
+     font-size: 22px;
+     font-weight: 600;
      text-transform: uppercase;
  }
 
@@ -606,6 +602,7 @@
      height: 180px;
      object-fit: cover;
      display: block;
+     cursor: pointer;
  }
 
  .card .actions {
@@ -618,9 +615,9 @@
  }
 
  .card .actions i {
-     font-size: 18px;
+     font-size: 14px;
      color: rgba(255, 255, 255, 0.9);
-     background: rgba(0, 0, 0, 0.5);
+     background: rgba(31, 31, 31, 0.5);
      padding: 6px;
      border-radius: 50%;
      cursor: pointer;
@@ -635,6 +632,7 @@
      margin-bottom: 8px;
      font-size: 14px;
      line-height: 1.2;
+     cursor: pointer;
  }
 
  .card .info .title img {
@@ -692,24 +690,23 @@
      display: flex;
      justify-content: center;
      margin: 30px 0;
-     gap: 8px;
+
      flex-wrap: wrap;
  }
 
  .pagination button {
-     border: none;
-     padding: 8px 12px;
-     background: #ccc;
+     border: #b8b7b7 solid 0.5px;
+     padding: 8px 15px;
+     background: white;
      color: #333;
      font-size: 14px;
-     border-radius: 4px;
      cursor: pointer;
      transition: background .2s;
-     margin: 4px;
+
  }
 
  .pagination button.active {
-     background: #007bff;
+     background: #0079E4;
      color: #fff;
  }
 
@@ -723,6 +720,7 @@
  }
 
  .btn-see-more {
+
      display: inline-flex;
      align-items: center;
      padding: 10px 20px;
@@ -730,11 +728,12 @@
      font-family: Arial, sans-serif;
      color: #295672;
      text-decoration: none;
-     border: 2px solid #295672;
+     border: 2px solid #d3d7d9;
      border-radius: 4px;
-     background: transparent;
+
      cursor: pointer;
      transition: background 0.2s, color 0.2s;
+     background-color: white;
  }
 
  .btn-see-more span {
@@ -758,7 +757,7 @@
      max-width: 1200px;
      margin: 0 auto 40px;
      height: 587px;
-    
+
  }
 
  .plan {
@@ -768,7 +767,7 @@
      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
      position: relative;
      display: flex;
-    
+
      flex-direction: column;
      align-items: center;
  }
@@ -869,7 +868,7 @@
      display: flex;
      align-items: center;
      justify-content: center;
-     font-size: 20px;
+     font-size: px;
      color: #005b96;
      text-decoration: none;
      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -889,9 +888,11 @@
      height: 56px;
      width: 194px;
  }
-footer{
-    margin-top: 50px;
-}
+
+ footer {
+     margin-top: 50px;
+ }
+
  .site-footer {
      background: #222;
      color: #eee;
@@ -956,4 +957,7 @@ footer{
      font-size: 13px;
      color: #bbb;
  }
- 
+
+ .container-service {
+     padding: 0;
+ }

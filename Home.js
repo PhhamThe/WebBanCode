@@ -1,10 +1,10 @@
 const items = document.querySelectorAll("#category-dropdown li a");
-const input = document.getElementById("input-search");
+const input = document.getElementById("dropbtn-search");
 
 items.forEach(function(item) {
   item.addEventListener('click', function() {
     
-    input.value = this.textContent;
+    input.textContent = this.textContent;
   });
 });
 
